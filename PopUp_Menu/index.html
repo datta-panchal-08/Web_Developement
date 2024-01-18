@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop Up Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="maintainer">
+        <button class="btn" id="submit">submit</button>
+        <div class="popupContainer" id="popupMenu">
+            <img id="image" alt="" src="https://images.unsplash.com/photo-1554830072-52d78d0d4c18?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dGhhbmslMjB5b3V8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="">
+            <h2>Thank You </h2>
+            <p>Than You Sir Your Form Has Been Succesfully Submitted</p>
+            <button id="close">OK</button>
+        </div>
+    </div>
+    <script>
+        const submitBtn = document.getElementById('submit');
+const closeBtn = document.getElementById('close');
+const popup = document.querySelector('.popupConatiner');
+
+submitBtn.addEventListener('click',()=>{
+    popup.classList.add('popupActive');
+});
+closeBtn.addEventListener('click',()=>{
+    popup.classList.remove('popupActive');
+});
+
+    </script>
+</body>
+</html>

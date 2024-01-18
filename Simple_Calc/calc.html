@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <div class="calc-container">
+        <h1>Calculator</h1>
+        <div class="input-container">
+         <p id="first-num">0</p>
+         <p id="sign">+</p> 
+         <p id="sec-num">0</p>
+        </div>
+         <div class="num-conatiner">
+            <button id="btn-1">1</button>
+            <button id="btn-2">2</button>
+            <button id="btn-3">3</button>
+            <button id="btn-4">4</button>
+         </div>
+         <div class="half-num">
+            <button id="btn-5">5</button>
+            <button id="btn-6">6</button>
+            <button id="btn-7">7</button>
+            <button id="btn-8">8</button>
+            <button id="btn-9">9</button>
+            <button id="btn-0">0</button>
+         </div>
+        <div class="math-operations">
+          <button onclick="multi()">X</button>
+          <button onclick="subtract()">-</button>
+          <button onclick="division()">/</button>
+          <button onclick="add()">+</button>
+        </div>
+        <div class="sum-container">
+            <button class="sum" onclick="sum()">SUM</button>
+            <p id="sum-el">Sum Of Two Numbers Is : </p>
+        </div>
+    </div>
+  
+    <script src="calc.js"></script>
+</body>
+</html>
